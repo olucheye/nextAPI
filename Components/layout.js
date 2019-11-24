@@ -19,11 +19,7 @@ const Layout = props => (
                 content="ie=edge"
             />
 
-            <link 
-                rel="stylesheet"
-                href="https://bootswatch.com/4/lux/bootstrap.min.css"
-            />
-
+        
             <link 
                 rel="stylesheet"
                 href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -32,7 +28,7 @@ const Layout = props => (
             />
 
             <link
-                href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+                href="https://fonts.googleapis.com/css?family=Quicksand:300,500&display=swap"
                 rel="stylesheet"
             />
 
@@ -42,7 +38,7 @@ const Layout = props => (
             />
         </head>
 
-        <Nav/>
+        <Nav />
 
         <div className="">
             {props.children}

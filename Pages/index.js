@@ -1,49 +1,34 @@
-import Layout from "../Components/layout";
-import Link from "next/link";
-import fetch from 'isomorphic-unfetch';
+import Layout from '../components/layout';
+import Link from 'next/link';
 
-
-const Index = ({houses}) => (
-
+const Index = () => (
     <Layout>
+        <div className="overlay">
+            <div className="col-12 col-md-8 col-lg-6 col-xl-7 mt-4 mt-lg-5 px-5 text-white">
+                <h1>The</h1>
+                <h1> History of <span className="text-primary">Ice</span> & <span className="text-danger">Fire</span></h1>
 
-        <div className="jumbotron jumbotron-fluid">
-            <div className="container">
-                <h1 className="display-4">Welcome to DealShop</h1>
-                <p className="lead">Here, you'd get a list of the most amazing deals from xxx shop.</p>
+                <p className="Lead my-5"> Learn about the Rich, Complicated  and Controversial Characters and Houses featured in the popular Tv series, Game of Thrones, an adaptation of Geroge R.R Martin's book. 
+                </p>
             </div>
-        </div>
 
-        <div className="container">
-        {houses.map(house => (
-            <div className="card mt-4" key={house.id}>
-                <img 
-                        src="" 
-                        className="card-img-top" 
-                        alt="..."
-                />
-                <div className="card-body">
-                        <h5 className="card-title"> {house.name} </h5>
-                        <p className="card-text">{house.region}</p>
-                        
-                        <Link><a className="btn btn-primary">Go somewhere</a></Link>
-                        
+            <div className="col-8 col-md-12 col-lg-12 col-xl-12 pl-4 button d-md-flex">
+                <div className="col-12 col-md-4">
+                <Link href="/houses">
+                <a className="btn btn-block btn-outline-warning text-warning mb-4 mb-md-0 mb-lg-0 shadow-lg rounded-pill py-2 font-weight-bold">Houses</a>
+                </Link>
+                </div>
+
+                <div className="col-12 col-md-4">
+                <Link href="/characters">
+                <a className="btn btn-block btn-outline-success text-success shadow-lg rounded-pill py-2 font-weight-bold">Characters</a>
+                </Link>
                 </div>
             </div>
-        ))}
         </div>
-            
+        
+
     </Layout>
-
 )
-
-async function getInitialProps() {
-    const response = await fetch("https://anapioficeandfire.com/api/houses");
-    const houses = await response.json();
-    
-    return { houses };
-}
-
-Index.getInitialProps = getInitialProps;
 
 export default Index;

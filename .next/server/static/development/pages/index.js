@@ -93,9 +93,9 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./Components/layout.js":
+/***/ "./components/layout.js":
 /*!******************************!*\
-  !*** ./Components/layout.js ***!
+  !*** ./components/layout.js ***!
   \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -108,8 +108,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/index.css */ "./styles/index.css");
 /* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_index_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nav */ "./Components/nav.js");
-var _jsxFileName = "C:\\Users\\dmt\\Documents\\HNG\\SelfTasks\\Hosted\\API\\RandomAPI\\Components\\layout.js";
+/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nav */ "./components/nav.js");
+var _jsxFileName = "C:\\Users\\dmt\\Documents\\HNG\\SelfTasks\\Hosted\\API\\RandomAPI\\components\\layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -152,28 +152,20 @@ const Layout = props => __jsx("div", {
   __self: undefined
 }), __jsx("link", {
   rel: "stylesheet",
-  href: "https://bootswatch.com/4/lux/bootstrap.min.css",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 22
-  },
-  __self: undefined
-}), __jsx("link", {
-  rel: "stylesheet",
   href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
   integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",
   crossOrigin: "anonymous",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 27
+    lineNumber: 23
   },
   __self: undefined
 }), __jsx("link", {
-  href: "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap",
+  href: "https://fonts.googleapis.com/css?family=Quicksand:300,500&display=swap",
   rel: "stylesheet",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 34
+    lineNumber: 30
   },
   __self: undefined
 }), __jsx("link", {
@@ -181,20 +173,20 @@ const Layout = props => __jsx("div", {
   href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 39
+    lineNumber: 35
   },
   __self: undefined
 })), __jsx(_nav__WEBPACK_IMPORTED_MODULE_3__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 45
+    lineNumber: 41
   },
   __self: undefined
 }), __jsx("div", {
   className: "",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 47
+    lineNumber: 43
   },
   __self: undefined
 }, props.children));
@@ -203,9 +195,9 @@ const Layout = props => __jsx("div", {
 
 /***/ }),
 
-/***/ "./Components/nav.js":
+/***/ "./components/nav.js":
 /*!***************************!*\
-  !*** ./Components/nav.js ***!
+  !*** ./components/nav.js ***!
   \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -216,7 +208,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\dmt\\Documents\\HNG\\SelfTasks\\Hosted\\API\\RandomAPI\\Components\\nav.js";
+var _jsxFileName = "C:\\Users\\dmt\\Documents\\HNG\\SelfTasks\\Hosted\\API\\RandomAPI\\components\\nav.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -228,7 +220,7 @@ const Nav = () => __jsx("div", {
   },
   __self: undefined
 }, __jsx("nav", {
-  className: "navbar navbar-light bg-light",
+  className: "navbar",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6
@@ -241,45 +233,32 @@ const Nav = () => __jsx("div", {
     lineNumber: 7
   },
   __self: undefined
-}, __jsx("a", {
-  className: "navbar-brand",
+}, __jsx("img", {
+  src: "https://res.cloudinary.com/dulniapvg/image/upload/v1574570196/icons%20-hng/matthew_wpqfbx.png",
+  className: "navbar-brand brandImg rounded-circle m-md-5",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 7
   },
   __self: undefined
-}, "DEALSHOP")), __jsx("div", {
+})), __jsx("form", {
+  class: "form-inline col-8",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, __jsx("input", {
+  className: "form-control mr-sm-2 ",
+  type: "search",
+  placeholder: "Quick Search",
+  "aria-label": "Search",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 10
   },
   __self: undefined
-}, __jsx("form", {
-  className: "form-inline my-2 my-lg-0",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}, __jsx("input", {
-  className: "form-control mr-sm-2",
-  type: "search",
-  placeholder: "Search",
-  "aria-label": "Search",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}), __jsx("button", {
-  className: "btn btn-outline-success my-2 my-sm-0",
-  type: "submit",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 17
-  },
-  __self: undefined
-}, "Search")))));
+}))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
 
@@ -2031,123 +2010,119 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/layout */ "./Components/layout.js");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "C:\\Users\\dmt\\Documents\\HNG\\SelfTasks\\Hosted\\API\\RandomAPI\\pages\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-const Index = ({
-  houses
-}) => __jsx(_Components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+const Index = () => __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "overlay",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "col-12 col-md-8 col-lg-6 col-xl-7 mt-4 mt-lg-5 px-5 text-white",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}, __jsx("h1", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 8
   },
   __self: undefined
-}, __jsx("div", {
-  className: "jumbotron jumbotron-fluid",
+}, "The"), __jsx("h1", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
+    lineNumber: 9
   },
   __self: undefined
-}, __jsx("div", {
-  className: "container",
+}, " History of ", __jsx("span", {
+  className: "text-primary",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, "Ice"), " & ", __jsx("span", {
+  className: "text-danger",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, "Fire")), __jsx("p", {
+  className: "Lead my-5",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 11
   },
   __self: undefined
-}, __jsx("h1", {
-  className: "display-4",
+}, " Learn about the Rich, Complicated  and Controversial Characters and Houses featured in the popular Tv series, Game of Thrones, an adaptation of Geroge R.R Martin's book.")), __jsx("div", {
+  className: "col-8 col-md-12 col-lg-12 col-xl-12 pl-4 button d-md-flex",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 15
   },
   __self: undefined
-}, "Welcome to DealShop"), __jsx("p", {
-  className: "lead",
+}, __jsx("div", {
+  className: "col-12 col-md-4",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
+    lineNumber: 16
   },
   __self: undefined
-}, "Here, you'd get a list of the most amazing deals from xxx shop."))), __jsx("div", {
-  className: "container",
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  href: "/houses",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 17
   },
   __self: undefined
-}, houses.map(house => __jsx("div", {
-  className: "card mt-4",
-  key: house.id,
+}, __jsx("a", {
+  className: "btn btn-block btn-outline-warning text-warning mb-4 mb-md-0 mb-lg-0 shadow-lg rounded-pill py-2 font-weight-bold",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
+    lineNumber: 18
   },
   __self: undefined
-}, __jsx("img", {
-  src: "",
-  className: "card-img-top",
-  alt: "...",
+}, "Houses"))), __jsx("div", {
+  className: "col-12 col-md-4",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 22
   },
   __self: undefined
-}), __jsx("div", {
-  className: "card-body",
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  href: "/characters",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 25
-  },
-  __self: undefined
-}, __jsx("h5", {
-  className: "card-title",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 26
-  },
-  __self: undefined
-}, " ", house.name, " "), __jsx("p", {
-  className: "card-text",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27
-  },
-  __self: undefined
-}, house.region), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 29
+    lineNumber: 23
   },
   __self: undefined
 }, __jsx("a", {
-  className: "btn btn-primary",
+  className: "btn btn-block btn-outline-success text-success shadow-lg rounded-pill py-2 font-weight-bold",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 29
+    lineNumber: 24
   },
   __self: undefined
-}, "Go somewhere")))))));
+}, "Characters"))))));
 
-async function getInitialProps() {
-  const response = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()("https://anapioficeandfire.com/api/houses");
-  const houses = await response.json();
-  return {
-    houses
-  };
-}
-
-Index.getInitialProps = getInitialProps;
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
@@ -2260,17 +2235,6 @@ module.exports = require("core-js/library/fn/promise");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
-
-/***/ }),
-
-/***/ "isomorphic-unfetch":
-/*!*************************************!*\
-  !*** external "isomorphic-unfetch" ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
